@@ -1,5 +1,6 @@
 'use strict'
 const dialogFlow = require('dialogflow').v2beta1;
+const structjson = require('./structjson');
 const config = require('../config/keys');
 const sessionClient = new dialogFlow.SessionsClient();
 
@@ -28,6 +29,33 @@ module.exports = {
                 }
 
             }
+        };
+
+
+        // Send request and log result
+
+        let responses = await sessionClient.detectIntent(request);
+        responses = await self.handleAction(responses);
+        return responses;
+
+    },
+
+    eventQuery: async function (event, parameters = {}) {
+        let self = module.exports;
+        // The text query request.
+        const request = {
+            session: sessionPath,
+            queryInput: {
+                event: {
+                    // The query to send to the dialogflow agent
+                    name: event,
+                    parameters: structjson.jsonToStructProto(parameters),
+                    // The language used by the client (en-US)
+                    languageCode: config.dialogFlowSessionLanguageCode,
+                },
+            }
+
+            
         };
 
 
