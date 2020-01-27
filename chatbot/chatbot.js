@@ -10,7 +10,7 @@ const credentials = {
     private_key: config.googlePrivateKey
 }
 
-const sessionClient = new dialogFlow.SessionsClient(projectID, credentials);
+const sessionClient = new dialogFlow.SessionsClient({projectID, credentials});
 
 const sessionPath = sessionClient.sessionPath(config.googleProjectID, config.dialogFlowSessionID);
 
