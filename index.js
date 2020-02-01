@@ -29,5 +29,5 @@ app.listen(PORT);
     }, milliseconds);
 };*/
 
-module.exports = wakeUpDyno;
+//module.exports = wakeUpDyno;
 //socket = io.listen(process.env.PORT);
