@@ -22,12 +22,12 @@ app.listen(PORT);
 
 
 
-const wakeUpDyno = (url, interval) => {
+/*const wakeUpDyno = (url, interval) => {
     const milliseconds = interval * 60000;
     setTimeout(() => {
         fetch(url);
     }, milliseconds);
-};
+};*/
 
 module.exports = wakeUpDyno;
 //socket = io.listen(process.env.PORT);
