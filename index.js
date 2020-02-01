@@ -4,6 +4,7 @@ const http = require('http');
 const app = express();
 
 app.use(bodyParser.json());
+app.use(express.json());
 
 
 require('./routes/dialogFlowRoutes')(app);
