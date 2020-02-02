@@ -3,7 +3,7 @@ module.exports = app => {
 
 
   app.get('/', (req, res) => {
-    res.send({ 'hello': 'world' })
+    res.send({ 'NAME': 'Md. Mehedi Rana Shuvo' });
   });
 
   app.post('/api/df_text_query', async (req, res) => {
