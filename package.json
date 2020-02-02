@@ -8,7 +8,7 @@
     "npm": "6.9.0"
   },
   "scripts": {
-    "web": "node index.js",
+    "web": "node server/index.js",
     "backend": "nodemon index.js"
   },
   "author": "mehedi rana shuvo",
@@ -23,5 +23,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehedirana/reactChatBot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mehedirana/reactChatBot/issues"
+  },
+  "homepage": "https://github.com/mehedirana/reactChatBot#readme"
 }
