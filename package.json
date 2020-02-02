@@ -10,6 +10,7 @@
   },
   "scripts": {
     "web": "node server/index.js",
+    "start": "node server.js",
     "backend": "nodemon index.js"
   },
   "author": "mehedi rana shuvo",
