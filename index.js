@@ -29,7 +29,7 @@ app.listen(PORT);
     }, milliseconds);
 };*/
 
-
+/*
 process
   .on('SIGTERM', shutdown('SIGTERM'))
   .on('SIGINT', shutdown('SIGINT'))
@@ -48,6 +48,6 @@ function shutdown(signal) {
       process.exit(err ? 1 : 0);
     }, 5000).unref();
   };
-}
+}*/
 //module.exports = wakeUpDyno;
 //socket = io.listen(process.env.PORT);
