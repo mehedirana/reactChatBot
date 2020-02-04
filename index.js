@@ -37,7 +37,7 @@ process
 
 setInterval(console.log.bind(console, 'tick'), 1000);
 http.createServer((req, res) => res.end('hi'))
-  .listen(process.env.PORT || 3000, () => console.log('Listening'));
+  .listen(process.env.PORT || 5000, () => console.log('Listening'));
 
 function shutdown(signal) {
   return (err) => {
