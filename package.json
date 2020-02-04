@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "React bot for webpage",
   "main": "./index.js",
-  "cacheDirectories": ["client/node_modules", "server/node_modules"],
+  "cacheDirectories": [
+    "client/node_modules",
+    "server/node_modules"
+  ],
   "engines": {
     "node": "12.6.0",
     "npm": "6.9.0"
@@ -21,6 +24,7 @@
     "body-parser": "^1.19.0",
     "dialogflow": "^1.1.1",
     "express": "^4.17.1",
+    "foobar": "1.1.0",
     "google-auth-library": "^5.9.1"
   },
   "devDependencies": {
@@ -33,5 +37,6 @@
   "bugs": {
     "url": "https://github.com/mehedirana/reactChatBot/issues"
   },
-  "homepage": "https://github.com/mehedirana/reactChatBot#readme"
+  "homepage": "https://github.com/mehedirana/reactChatBot#readme",
+  "keywords": []
 }
