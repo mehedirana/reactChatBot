@@ -13,7 +13,7 @@
   },
   "scripts": {
     "web": "node www/index.js",
-    "start": "node .server/index.js",
+    "start": "node ./index.js",
     "backend": "nodemon ./index.js"
   },
   "author": "mehedi rana shuvo",
