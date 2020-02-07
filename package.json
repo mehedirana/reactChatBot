@@ -12,9 +12,10 @@
     "npm": "6.9.0"
   },
   "scripts": {
-    "web": "node index.js",
-    "start": "node index.js",
+    "web": "nodemon index.js",
+    "start": "nodemon index.js",
     "backend": "nodemon index.js"
+    
   },
   "author": "mehedi rana shuvo",
   "license": "ISC",
