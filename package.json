@@ -2,7 +2,7 @@
   "name": "chatbot",
   "version": "1.0.0",
   "description": "React bot for webpage",
-  "main": "./index.js",
+  "main": "index.js",
   "cacheDirectories": [
     "client/node_modules",
     "server/node_modules"
@@ -12,9 +12,9 @@
     "npm": "6.9.0"
   },
   "scripts": {
-    "web": "node www/index.js",
-    "start": "node ./index.js",
-    "backend": "nodemon ./index.js"
+    "web": "node index.js",
+    "start": "node index.js",
+    "backend": "nodemon index.js"
   },
   "author": "mehedi rana shuvo",
   "license": "ISC",
