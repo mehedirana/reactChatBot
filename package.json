@@ -12,8 +12,8 @@
     "npm": "6.9.0"
   },
   "scripts": {
-    "web": "nodemon index.js",
-    "start": "nodemon index.js",
+    "web": "node index.js",
+    "start": "node index.js",
     "backend": "nodemon index.js"
     
   },
