@@ -39,5 +39,7 @@
     "url": "https://github.com/mehedirana/reactChatBot/issues"
   },
   "homepage": "https://github.com/mehedirana/reactChatBot#readme",
-  "keywords": []
+  "keywords": [],
+  "proxy": "http://localhost:5000"
+
 }
