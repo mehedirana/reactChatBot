@@ -8,6 +8,6 @@ const Landing = () => {
             with thw help of chatbot
     </div>
     )
-}
+};
 
 export default Landing;
