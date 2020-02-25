@@ -6,6 +6,7 @@ const Header = () => {
     return (
         <nav>
             <div class="nav-wrapper">
+            <Link to={'/'} className="brand-logo">It courses</Link>
                 <ul>
                     <li><Link to={'/shop'}>Shop</Link></li>
                     <li><Link to={'/about'}>About us</Link></li>
