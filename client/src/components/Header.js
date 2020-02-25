@@ -5,14 +5,16 @@ const Header = () => {
 
     return (
         <nav>
-            <ul>
-                <li><Link to={'/shop'}>Shop</Link></li>
-                <li><Link to={'/about'}>About us</Link></li>
-            </ul>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><Link to={'/shop'}>Shop</Link></li>
+                    <li><Link to={'/about'}>About us</Link></li>
+                </ul>
+            </div>
 
         </nav>
 
-            )
-        };
-        
+    )
+};
+
 export default Header;
