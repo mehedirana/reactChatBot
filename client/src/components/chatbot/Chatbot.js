@@ -56,6 +56,9 @@ class Chatbot extends Component {
         }
 
     }
+    componentDidMount(){
+        this.df_evet_query('Welcome');
+    }
 
     render() {
         return (
