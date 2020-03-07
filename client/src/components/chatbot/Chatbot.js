@@ -45,6 +45,9 @@ class Chatbot extends Component {
             this.setState({ messages: [...this.state.messages, says] });
         }
     }
+    componentDidMount(){
+        this.df_evet_query('Welcome');
+    }
     renderMessages(stateMessages) {
         if (stateMessages) {
             return stateMessages.map((message, i) => {
@@ -56,9 +59,7 @@ class Chatbot extends Component {
         }
 
     }
-    componentDidMount(){
-        this.df_evet_query('Welcome');
-    }
+   
 
     render() {
         return (
