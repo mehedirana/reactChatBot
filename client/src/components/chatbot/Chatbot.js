@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios/index';
 import Message from './Message';
+
 class Chatbot extends Component {
     constructor(props) {
         super(props);
+
+        this._HandleInputKeyPress = this._HandleInputKeyPress.bind(this);
 
         this.state = {
             messages: []
@@ -59,6 +62,13 @@ class Chatbot extends Component {
         }
 
     }
+    _HandleInputKeyPress(e){
+
+        if(e.key==='Enter'){
+            this.df_text_query(e.target.value);
+            e.target.value ='';
+        }
+    }
    
 
     render() {
@@ -67,7 +77,7 @@ class Chatbot extends Component {
                 <div id="chatbot" style={{ height: '100%', width: '100%', overflow: 'auto' }}>
                     <h2>ChatBot</h2>
                     {this.renderMessages(this.state.messages)}
-                    <input type="text" />
+                    <input type="text"  onKeyPress={this._HandleInputKeyPress}/>
 
                 </div>
 
