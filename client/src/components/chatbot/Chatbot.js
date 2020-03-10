@@ -51,6 +51,12 @@ class Chatbot extends Component {
     componentDidMount(){
         this.df_evet_query('Welcome');
     }
+
+    componentDidUpdate(){
+
+        this.messagesEnd.scrollIntoView({behaviour: "smooth"});
+    }
+
     renderMessages(stateMessages) {
         if (stateMessages) {
             return stateMessages.map((message, i) => {
