@@ -77,12 +77,16 @@ class Chatbot extends Component {
                 <div id="chatbot" style={{ height: '100%', width: '100%', overflow: 'auto' }}>
                     <h2>ChatBot</h2>
                     {this.renderMessages(this.state.messages)}
+                    <div Ref={(el) => {this.messagesEnd =el;}}
+                    style={{ float: 'left', clear: "both"}}>
+
+                    </div>
                     <input type="text"  onKeyPress={this._HandleInputKeyPress}/>
 
                 </div>
 
             </div>
-        )
+        );
     }
 }
 
