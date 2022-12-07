@@ -22,9 +22,9 @@
   "dependencies": {
     "@ngx-translate/core": "^9.1.1",
     "async": "^3.1.1",
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "dialogflow": "^1.1.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "foobar": "1.1.0",
     "google-auth-library": "^5.9.1",
     "pg": "7.18.1"
